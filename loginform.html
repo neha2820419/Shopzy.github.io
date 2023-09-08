@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+  </head>
+  <style>
+    * {
+      color: white;
+    }
+    .container {
+      border: 2px solid #ffffff;
+      text-align: center;
+      border-radius: 10px;
+      height: 470px;
+      width: 400px;
+    }
+    body {
+      background: black;
+      padding: 70px;
+    }
+    h1 {
+      margin: auto;
+    }
+    .row {
+      height: 90px;
+      width: 396px;
+      background-color: grey;
+    }
+    .input-group-text {
+      background-color: black;
+    }
+    .para {
+      text-align: right;
+    }
+    .padding {
+      padding: 10px 20px;
+      font-size: 20px;
+      background-color: #02ac70;
+      font-weight: 600;
+    }
+    @media (max-width: 400px){
+        .container{
+            text-align: center;
+            height: 500px;
+            width: 300px;
+        }
+        .row{
+            width: 296px;
+        }
+    }
+  </style>
+  <body>
+  <form class="container" action="http://127.0.0.1:5500/index.html" method="POST" target="_blank">
+    <div class="row">
+      <h1><i class="fa fa-lock" aria-hidden="true"></i> Login</h1>
+    </div>
+    <br /><br />
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+      </div>
+      <input
+        type="text"
+        name=""
+        class="form-control"
+        placeholder="username or email"
+        id="username"
+        required
+      />
+    </div>
+    <br />
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-key icon"></i></span>
+      </div>
+      <input
+        type="Password"
+        name=""
+        class="form-control"
+        placeholder="password"
+        id="password"
+        required
+      />
+    </div>
+    <p class="para"><a href="#">Forgot Password?</a></p>
+
+    <div class="checkbox">
+      <label><input type="checkbox" value="" />  Remember me</label>
+    </div>
+
+    <br />
+    <a href="index.html"><button type="submit" class="btn padding btn-success">
+      <span class="glyphicon glyphicon-off"></span> Login
+    </button></a>
+
+    <br />
+
+    <div style="border: 1px solid black; height: 1px; width: 300px"></div>
+
+    <br />
+    <div class="footer">
+      <p>Don't have an Account! <a href="#">Sign Up Here</a></p>
+    </div>
+  </form>
+</body>
+</html>
